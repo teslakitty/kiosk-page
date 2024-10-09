@@ -4,4 +4,5 @@ document.getElementById('openAllBtn').addEventListener('click', function() {
     window.open('http://ha:8123', '_blank');
     window.open('http://mediapi.local', '_blank');
     window.open('https://cashier2.netlify.app', '_blank');
+    window.open('https://numpad.netlify.app/', '_blank');
 });
