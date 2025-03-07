@@ -12,13 +12,15 @@
             <h1 id="time">Loading...</h1>
         </div>
         <div class="embed-card">
+            <!-- Smaller Weather Iframe -->
             <iframe src="https://www.meteoblue.com/en/weather/widget/three/your-city?geoloc=fixed" 
-                    width="100%" height="250" style="border:none;">
+                    width="100%" height="200" style="border:none;">
             </iframe>
         </div>
         <!-- Home Assistant Button -->
         <div class="embed-card">
-            <button onclick="window.location.href='http://teslakitty-ha.duckdns.org:8123/'" style="width: 100%; height: 100%; font-size: 1.5em; background-color: #333333; color: white; border: none; border-radius: 10px;">
+            <button onclick="window.open('http://teslakitty-ha.duckdns.org:8123/', '_blank')" 
+                    style="width: 100%; height: 100%; font-size: 1.5em; background-color: #333333; color: white; border: none; border-radius: 10px;">
                 Open Home Assistant
             </button>
         </div>
