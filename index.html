@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiosk Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://teslakitty-cdn.netlify.app/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the Kiosk</h1>
-
-    <!-- Buttons linking to your services -->
-    <a href="http://ha:8123" target="_blank"><button>Home Assistant</button></a>
-    <a href="http://mediapi.local" target="_blank"><button>Volumio</button></a>
-    <a href="https://cashier2.netlify.app" target="_blank"><button>Cashier</button></a>
-    <a href="https://numpad.netlify.app/" target="_blank"><button>numpad</button></a>
-    <!-- Button to open all links at once -->
-    <p>you might need allow popups for this site</p>
-    <button id="openAllBtn">Open All</button>
-
+    <div class="grid-container">
+        <div class="time-card">
+            <h1 id="time">Loading...</h1>
+        </div>
+        <div class="embed-card">
+            <iframe src="https://www.meteoblue.com/en/weather/widget/three/your-city?geoloc=fixed" 
+                    width="100%" height="250" style="border:none;">
+            </iframe>
+        </div>
+        <div class="embed-card">
+            <iframe src="http://teslakitty-ha.duckdns.org:8123/" width="100%" height="600" style="border:none;"></iframe>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
