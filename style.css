@@ -10,7 +10,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
     grid-template-rows: auto auto auto;
     gap: 10px;
     padding: 20px;
@@ -19,6 +19,7 @@ body {
 .time-card {
     font-size: 3em;
     font-weight: bold;
+    grid-column: span 4; /* Make the time card span all 4 columns */
 }
 
 .embed-card iframe {
