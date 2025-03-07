@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiosk Page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Corrected to style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="grid-container">
@@ -16,8 +16,11 @@
                     width="100%" height="250" style="border:none;">
             </iframe>
         </div>
+        <!-- Home Assistant Button -->
         <div class="embed-card">
-            <iframe src="http://teslakitty-ha.duckdns.org:8123/" width="100%" height="600" style="border:none;"></iframe>
+            <button onclick="window.location.href='http://teslakitty-ha.duckdns.org:8123/'" style="width: 100%; height: 100%; font-size: 1.5em; background-color: #333333; color: white; border: none; border-radius: 10px;">
+                Open Home Assistant
+            </button>
         </div>
     </div>
     <script src="script.js"></script>
