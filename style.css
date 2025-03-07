@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    background: #121212; /* Dark grey with a hint of black */
+    background-color: #121212; /* Dark grey with a hint of black for dark mode */
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
@@ -8,20 +8,23 @@ body {
     text-align: center;
 }
 
+/* Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    grid-template-rows: auto auto auto;
-    gap: 10px;
+    grid-template-rows: auto auto;
+    gap: 20px;
     padding: 20px;
 }
 
+/* Time card should span all columns */
 .time-card {
     font-size: 3em;
     font-weight: bold;
     grid-column: span 4; /* Make the time card span all 4 columns */
 }
 
+/* Embed card styling */
 .embed-card iframe {
     width: 100%;
     border-radius: 10px;
