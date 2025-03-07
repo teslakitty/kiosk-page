@@ -13,7 +13,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    grid-template-rows: auto 1fr; /* First row for time, second row for iframes */
+    grid-template-rows: auto 1fr; /* First row for time, second row for buttons */
     gap: 10px;
     height: 100%; /* Take up full screen */
     padding: 10px;
@@ -28,15 +28,6 @@ body {
 }
 
 /* Embed card styling */
-.embed-card iframe {
-    width: 100%; /* Make iframe take full width of its container */
-    height: 200px; /* Set height of weather iframe to a smaller value */
-    border-radius: 10px;
-    background: white;
-    border: none;
-}
-
-/* Home Assistant Button */
 .embed-card button {
     width: 100%;
     height: 100%;
@@ -47,9 +38,9 @@ body {
     border-radius: 10px;
 }
 
-/* Adjust iframe layout to occupy more space */
+/* Adjust button layout to occupy more space */
 .embed-card:nth-child(1) {
-    grid-column: span 4; /* Weather iframe spans all 4 columns */
+    grid-column: span 4; /* Weather button spans all 4 columns */
 }
 
 .embed-card:nth-child(2) {
