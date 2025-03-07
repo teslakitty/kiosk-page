@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    background: black;
+    background: #121212; /* Dark grey with a hint of black */
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
