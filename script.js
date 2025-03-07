@@ -1,8 +1,5 @@
-// Function to open all the links
-document.getElementById('openAllBtn').addEventListener('click', function() {
-    // Open each URL in a new tab
-    window.open('http://ha:8123', '_blank');
-    window.open('http://mediapi.local', '_blank');
-    window.open('https://cashier2.netlify.app', '_blank');
-    window.open('https://numpad.netlify.app/', '_blank');
-});
+// Function to update time every second
+function updateTime() {
+    document.getElementById('time').innerText = new Date().toLocaleTimeString();
+}
+setInterval(updateTime, 1000);
