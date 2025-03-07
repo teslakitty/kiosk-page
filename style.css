@@ -13,13 +13,13 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    grid-template-rows: auto 1fr; /* First row for time, second row for buttons */
+    grid-template-rows: auto; /* Automatically adjust rows */
     gap: 10px;
     height: 100%; /* Take up full screen */
     padding: 10px;
 }
 
-/* Time card should span all columns */
+/* Time card spans all columns */
 .time-card {
     font-size: 3em;
     font-weight: bold;
@@ -27,8 +27,15 @@ body {
     margin-bottom: 10px;
 }
 
-/* Embed card styling */
-.embed-card button {
+/* Embed card styling for buttons */
+.embed-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styling */
+.grid-button {
     width: 100%;
     height: 100%;
     font-size: 1.5em;
@@ -36,13 +43,12 @@ body {
     color: white;
     border: none;
     border-radius: 10px;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Adjust button layout to occupy more space */
-.embed-card:nth-child(1) {
-    grid-column: span 4; /* Weather button spans all 4 columns */
-}
-
-.embed-card:nth-child(2) {
-    grid-column: span 4; /* Home Assistant button spans all 4 columns */
+/* Making the buttons fit in grid */
+.embed-card:nth-child(2),
+.embed-card:nth-child(3) {
+    grid-column: span 2; /* Each button spans 2 columns */
 }
